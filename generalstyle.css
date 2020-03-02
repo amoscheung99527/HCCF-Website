@@ -1,0 +1,58 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 1-Aug-2019, 2:51:37 PM
+    Author     : Amos
+*/
+
+body{
+	background-color: #464e57;
+	font-family: arial;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    color: #4098cc;
+}
+
+main{
+	color: white;
+	font-family: arial;
+}
+
+p{
+	line-height: 1.6;
+}
+
+.gap-1{
+	height:1px;
+}
+
+.gap-70{
+	height:70px;
+}
+
+
+.link{
+	text-decoration: none;
+	color: #5ba4c7;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+
+@-ms-viewport{
+  width: device-width;
+}

@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 23-Jul-2019, 5:26:44 PM
+    Author     : Amos
+*/
+
+h3{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#map1 {
+    height: 400px;
+    width: 50%;
+ }
+ 
+ #map2{
+     height: 400px;
+     width:50%;
+ }
+ 
+ #map3{
+     height: 400px;
+     width:50%;
+ }
+ 
+ #map4{
+     height: 400px;
+     width:50%;
+ }
+ #map5{
+     height: 400px;
+     width:50%;
+ }

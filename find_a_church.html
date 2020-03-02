@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+Amos Cheung Comp266 site find a church
+-->
+<html lang="en">
+    <head>
+        <title>Find a Church</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="generalstyle.css" rel='stylesheet' type="text/css">
+        <link href="menustyle.css" rel='stylesheet' type="text/css">
+        <link href="findachurchstyle.css" rel='stylesheet' type="text/css">
+        <script src="responsivemenu.js" type="text/javascript"></script> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="GoUp.js" type="text/javascript"></script>
+        <script src="JqueryGoUp/src/jquery.goup.js" type="text/javascript"></script>
+        <script src="church_map.js" type="text/javascript"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaDLMi9nB8GTWXQIrRs3xEH5I8Pcr4NPY&callback=initMap"></script>   
+    </head>
+
+    <body>
+
+        <header>
+		<h1>Hamilton Chinese Christian Fellowship</h1>
+        </header>
+
+        <div class="topnav" id="myTopnav">
+          <a href="index.html" class="active">HOME</a>
+
+          <div class="dropdown">
+            <button class="dropbtn">ABOUT US</button>
+            <div class="dropdown-content">
+              <a href="committee.html">OUR COMMITTEE</a>
+              <a href="mission_and_vision.html">MISSION & VISION</a>
+              <a href="theme.html">THEME OF THE YEAR</a>
+            </div>
+          </div>
+          <a href="join_us.html">JOIN US</a>
+          <a href="prayers.html">PRAYERS</a>
+          <a href="find_a_church.html">FIND A CHURCH</a>
+          <a href="contact_us.html">CONTACT US</a>
+          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+        <main>
+        <p>Here are the churches people in CCF usually attend. For more information, feel free to contact us at <a class="link" href="mailto:hamilton.ccf@gmail.com<"> hamilton.ccf@gmail.com</a></p>
+
+        <h3>Church On The Rock</h3>
+            <p><span class="bold">Service time</span>: Sunday 9:15am & 11:15 am</p>
+            <p><span class="bold">Church Website</span>: <a class="link" href="http://www.churchontherock.ca/">http://www.churchontherock.ca</a></p>
+            <p><span class="bold"> Location</span>: <a class="link" href="https://www.google.com/maps/place/Calvin+Christian+School/@43.2276302,-79.8885957,17z/data=!3m1!4b1!4m5!3m4!1s0x882c9ae2a312b4df:0xd3b040e52247ebce!8m2!3d43.2276302!4d-79.886407">Calvin Christian School, 547 West 5th Street, Hamilton, ON, L9C 3P7</a></p>
+            <div id="map1"></div>
+            <div class="gap-1"></div>
+
+            <h3>Hamilton Chinese Alliance Church</h3>
+            <p><span class="bold">Service time</span>: Sunday 9:30am</p>
+            <p><span class="bold">Church Website</span>: <a class="link" href="http://hamiltoncac.org/">http://hamiltoncac.org/</a></p>
+            <p><span class="bold"> Location</span>: <a class="link" href="https://www.google.com/maps/place/Hamilton+Chinese+Alliance+Church/@43.2639144,-79.8910449,17z/data=!3m1!4b1!4m5!3m4!1s0x882c9b63ac874299:0x4e6e2a58c7f27091!8m2!3d43.2639144!4d-79.8888562">50 Breadalbane St, Hamilton, ON L8R 3G1</a></p>
+            <div id="map2"></div>
+            <div class="gap-1"></div>
+
+            <h3>Hughson Street Baptist Church</h3>
+            <p><span class="bold">Service time</span>: Sunday 10:00am</p>
+            <p><span class="bold">Church Website</span>: <a class="link" href="https://www.hughson.ca/">https://www.hughson.ca/</a></p>
+            <p><span class="bold"> Location</span>: <a class="link" href="https://www.google.com/maps/place/Bennetto+Elementary+School/@43.2677045,-79.8637509,17z/data=!3m1!4b1!4m5!3m4!1s0x882c9c7713fc032f:0x93a444309e4fed70!8m2!3d43.2677045!4d-79.8615622">Bennetto School, 47 Simcoe St E, Hamilton, ON, L8L 3N2</a></p>
+            <div id="map3"></div>
+            <div class="gap-1"></div>
+
+            <h3>LIFT Church</h3>
+            <p><span class="bold">Service time</span>: Sunday 4:00pm</p>
+            <p><span class="bold">Church Website</span>: <a class="link" href="https://liftchurch.ca/location/">https://liftchurch.ca/location/</a></p>
+            <p><span class="bold"> Location</span>: <a class="link" href="https://www.google.com/maps/place/McMaster+University+Student+Centre/@43.263475,-79.9199141,17z/data=!3m2!4b1!5s0x882c9b5369b3c8e1:0x4fcdd566249528d0!4m5!3m4!1s0x882c9b53630b56ef:0xf87279542227b6b2!8m2!3d43.263475!4d-79.9177254">CIBC Hall 3rd Floor Mcmaster University Student Center, 1280 Main St W, Hamilton, ON L8S 4S4</a></p>
+            <div id="map4"></div>
+            <div class="gap-1"></div>
+
+            <h3>Westside Baptist Church</h3>
+            <p><span class="bold">Service time</span>: Sunday 10:00am</p>
+            <p><span class="bold">Church Website</span>: <a class="link" href="https://www.westsidehamilton.com/">https://www.westsidehamilton.com/</a></p>
+            <p><span class="bold"> Location</span>: <a class="link" href="https://www.google.com/maps/place/Westside+Church/@43.2523013,-79.9317338,17z/data=!4m5!3m4!1s0x882c84b799e168d5:0x2d9b3717dc0d19c2!8m2!3d43.2525798!4d-79.9297227?hl=en">261 Whitney Ave, Hamilton, ON L8S 2G9</a></p>
+            <div id="map5"></div>
+            <div class="gap-1"></div>
+        </main>
+
+    </body>
+</html>

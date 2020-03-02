@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+Amos Cheung Comp266 site Contact Us
+-->
+<html lang="en">
+    <head>
+        <title>Contact Us</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="generalstyle.css" rel='stylesheet' type="text/css">
+        <link href="menustyle.css" rel='stylesheet' type="text/css">
+        <link href="contactstyle.css" rel='stylesheet' type="text/css">
+        <script src="responsivemenu.js" type="text/javascript"></script>
+        <script src="WarnBeforeLeaveForm.js" type="text/javascript"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+
+        <header>
+		<h1>Hamilton Chinese Christian Fellowship</h1>
+        </header>
+
+        <div class="topnav" id="myTopnav">
+          <a href="index.html" class="active">HOME</a>
+
+          <div class="dropdown">
+            <button class="dropbtn">ABOUT US</button>
+            <div class="dropdown-content">
+              <a href="committee.html">OUR COMMITTEE</a>
+              <a href="mission_and_vision.html">MISSION & VISION</a>
+              <a href="theme.html">THEME OF THE YEAR</a>
+            </div>
+          </div>
+          <a href="join_us.html">JOIN US</a>
+          <a href="prayers.html">PRAYERS</a>
+          <a href="find_a_church.html">FIND A CHURCH</a>
+          <a href="contact_us.html">CONTACT US</a>
+          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+        <main>
+            <div class="gap-70"></div>
+
+            <p>Our Facebook:<a href="https://www.facebook.com/groups/312259792235859/" class="fa fa-facebook"></a></p>
+
+            <p>If you have any question or would like to receive weekly event update, please fill out the form below</p>
+            <form id="myForm" action="mailto:amoscheung99527@gmail.com" method="post" enctype="text/plain" onsubmit="setFormSubmitting()">
+                Full name: <br>
+                <input type="text" name="firstname" required><br>
+
+                Email: <br>
+                <input type="email" name="email" required><br>
+
+                Would you like to receive weekly event update? <br>
+                <input type="radio" name="email update" value="Yes" checked> Yes
+                <input type="radio" name="email update" value="No"> No<br>
+
+                Question/Comment:<br>
+                <textarea name="Question/Comment" style="width:75%; height:100px"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+
+    </body>
+</html>
